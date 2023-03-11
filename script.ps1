@@ -14,6 +14,15 @@ function addTodo {
     $todo = Read-Host -prompt "Add Task here"
     @{todo = $todo} | Add-MdbcData
     Write-Host "$todo Successfully Added!"
+    getTodos
+}
+
+function removeTodo {
+    $todo = Read-Host -prompt "Name of Completed Task"
+    $id = Get-MdbcData @{todo = $todo}
+    @{_id = $id._id} | Remove-MdbcData
+    Write-Host "$todo Successfully Completed!"
+    getTodos
 }
 
 getTodos
