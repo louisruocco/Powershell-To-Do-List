@@ -2,8 +2,6 @@
 
 A Powershell Module that stores tasks.
 
----
-
 ## Documentation:
 
 To see what Tasks you have added:
@@ -17,8 +15,6 @@ To add a Task:
 To remove a Task 
 
 - Type `removeTodo` into the terminal
-
----
 
 ## Technologies Used: 
 
